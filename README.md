@@ -27,3 +27,10 @@ This repository contains the work completed during a 10-day CMOS circuit design 
 - [CMOS power supply and device variation robustness evaluation](#ngspicesky130---day-5---cmos-power-supply-and-device-variation-robustness-evaluation)
   - [NgspiceSky130_D5SK1 - Static behavior evaluation – CMOS inverter robustness – Power supply variation](#ngspicesky130_d5sk1---static-behavior-evaluation--cmos-inverter-robustness--power-supply-variation)
   - [NgspiceSky130_D5SK2 - Static behavior evaluation – CMOS inverter robustness – Device variation](#ngspicesky130_d5sk2---static-behavior-evaluation--cmos-inverter-robustness--device-variation)
+ 
+## Tools Used
+SKY130 Open-Source PDK
+ngspice (Circuit Simulation)
+GitHub(Documentation)
+
+# Day1 [Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)]
