@@ -38,3 +38,15 @@ GitHub(Documentation)
 ## L1 Why do we need SPICE simulations?
 SPICE (Simulation Program with Integrated Circuit Emphasis) simulations are used to analyze and verify the behavior of electronic circuits before fabrication.
 #### Circuit Design
+A circuit design includes PMOS and NMOS tied together in such a fashion that they result into logic gates such as NAND, NOR, OR, AND etc. 
+given below is an inverter circuit using NMOS and PMOS
+
+<img width="484" height="471" alt="image" src="https://github.com/user-attachments/assets/1b59621f-19e3-425f-93c6-76714357735a" />
+
+#### Delays
+Without SPICE there won't be delays and if there are no delays physical design flow, crosstalk won't make any sense.
+Now,let us consider Delay tables for both level 1 and level 2 buffers have been shown. This is calculated by circuit design and simulation
+
+<img width="819" height="394" alt="image" src="https://github.com/user-attachments/assets/d9b57b00-b12e-4335-adab-c96b0c321681" />
+
+## L2 Introduction to basic element in circuit design-NMOS
