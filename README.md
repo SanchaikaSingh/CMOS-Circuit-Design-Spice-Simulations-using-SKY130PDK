@@ -34,3 +34,7 @@ ngspice (Circuit Simulation)
 GitHub(Documentation)
 
 # Day1 [Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)]
+## Introduction to Circuit Design and SPICE simulations
+## L1 Why do we need SPICE simulations?
+SPICE (Simulation Program with Integrated Circuit Emphasis) simulations are used to analyze and verify the behavior of electronic circuits before fabrication.
+#### Circuit Design
