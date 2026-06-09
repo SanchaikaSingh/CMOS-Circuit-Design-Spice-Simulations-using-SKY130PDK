@@ -642,6 +642,12 @@ The initial supply voltage is 1.8V and we are reducing it with the step of 0.2V,
 
 <img width="1065" height="763" alt="Screenshot 2026-06-08 181211" src="https://github.com/user-attachments/assets/43d5d6b7-5988-458a-9709-5814330bdf57" />
 
+We will calculte the Gain:
+Vdd=1.8V
+|gain|=10.64
+
+<img width="255" height="67" alt="image" src="https://github.com/user-attachments/assets/d8869aad-1454-4e8e-ac03-31f4da1eef01" />
+
 ## Static behavior evaluation – CMOS inverter robustness – Device variation
 ## L1 Sources of variation – Etching process
 During fabrication, the gate dimensions may change. Etching is one of the sources of variation.
