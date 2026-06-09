@@ -34,7 +34,7 @@ This repository contains the work completed during a 10-day CMOS circuit design 
 - ngspice (Circuit Simulation)  
 - GitHub (Documentation)
 
-# Day1 [Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)]
+# Day 1 [Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)]
 ## Introduction to Circuit Design and SPICE simulations
 ## L1 Why do we need SPICE simulations?
 SPICE (Simulation Program with Integrated Circuit Emphasis) simulations are used to analyze and verify the behavior of electronic circuits before fabrication.
@@ -199,7 +199,7 @@ To check the value of Id for corresponding Vds and Vgs, just left click and see.
 
 <img width="263" height="26" alt="image" src="https://github.com/user-attachments/assets/3d63d8d9-cec3-4566-b6a4-d65205a6c457" />
 
-#  Day2 [Velocity saturation and basics of CMOS inverter VTC]
+#  Day 2 [Velocity saturation and basics of CMOS inverter VTC]
 ## SPICE simulation for lower nodes and velocity saturation effect
 ## L1 SPICE simulation for lower nodes
 This curve is from previous SPICE simulation in which Id is at y-axis and Vds is at x-axis
@@ -387,7 +387,7 @@ When Vin = 2V, Vout = 0V; NMOS is in linear region and PMOS is Cut Off.
 
 <img width="1091" height="508" alt="image" src="https://github.com/user-attachments/assets/06cf38f2-b4bf-44c7-a1f8-c92c266eb17f" />
 
-# NgspiceSky130-Day3-CMOS switching threshold and dynamic simulations
+# Day 3 [CMOS Switching threshold and dynamic simulations]
 ## Voltage transfer characteristics-SPICE simulations
 ## L1 SPICE deck creation for CMOS inverter
 SPICE Deck
@@ -436,6 +436,32 @@ get the plot type ngspice and plot out vs in.
 <img width="1070" height="763" alt="Screenshot 2026-06-08 175800" src="https://github.com/user-attachments/assets/69ecb000-d93b-409d-8c78-2bc0a583aae2" />
 
 <img width="1070" height="761" alt="Screenshot 2026-06-08 175842" src="https://github.com/user-attachments/assets/a9962939-0b33-4c30-86f9-eca31527a219" />
+
+So switching threshold for W/L=2.3 is around 0.876V
+
+<img width="270" height="27" alt="image" src="https://github.com/user-attachments/assets/b4e4e864-3f98-4160-9de4-d1e2f5d39ed5" />
+
+We will now see the transient analysis:
+For that we will go inside the tansient SPICE file for day3
+
+<img width="1043" height="767" alt="Screenshot 2026-06-08 175954" src="https://github.com/user-attachments/assets/4631f2db-3e56-4f33-8991-f7c53fc3f7b9" />
+
+We can see that it is for typical corner as before and the W/L is also same. But now we taking transient pulse from 0v to 1V with shift of 0 with rise time and fall time being 0.1ns and 0.1ns respectively, pulse width of 2ns and total time period of 4ns. Let us run this.
+
+<img width="1053" height="761" alt="Screenshot 2026-06-08 180058" src="https://github.com/user-attachments/assets/2559c3b8-60a7-43d5-b059-d072355f0a79" />
+
+<img width="1061" height="767" alt="Screenshot 2026-06-08 180125" src="https://github.com/user-attachments/assets/85840c7f-8f1f-4d21-bafb-0fce54fccf91" />
+
+So for rise delay and fall delay, we need to consider 50% of output curve i.e. at 0.9V; out-in.
+
+<img width="290" height="65" alt="image" src="https://github.com/user-attachments/assets/946ea47d-1c1d-4509-b09d-6f203d0e56cc" />
+
+Therefore, Rise delay = 2.482ns-2.15ns = 0.333ns
+For fall delay, consider while falling.
+
+<img width="306" height="61" alt="image" src="https://github.com/user-attachments/assets/ce30edcf-4a7f-46f6-8282-b05f336f76fa" />
+
+Therefore, Fall Delay = 4.334ns-4.050ns = 0.285ns
 
 ## Static behavior evaluation – CMOS inverter robustness – Switching Threshold
 ## L1 Switching Threshold, Vm
@@ -530,7 +556,7 @@ Rise delay decreases with increase in PMOS width, this shows the time required t
 
 <img width="1244" height="667" alt="image" src="https://github.com/user-attachments/assets/c0d1d632-3ac9-45bd-9d65-8f6585d44f3d" />
 
-# NgspiceSky130-Day4-CMOS Noise Margin robustness evaluation
+# Day 4 [CMOS Noise Margin robustness evaluation]
 ## Static behaviour evaluation-CMOS inverter robustness-Noise Margin
 ## L1 Introduction to Noise Margin
 Now we will learn CMOS inverter's robustness towards the Noise Margin. Also we see the Noise margin evaluation for CMOS inverter. 
@@ -604,7 +630,7 @@ We will now plot Noise margins
 
 We will take the point where the slope is -1 ; x axis will give VIL and VIH, whereas y axis will give VOH and VOL. Noise margin NH = VOH - VIH = 1.70952-0.98778 = 0.72 Noise margin NL = VIL - VOL = 0.7733-0.09523 = 0.67807
 
-# DAY 5 - CMOS power supply and device variation robustness evaluation
+# DAY 5 [CMOS power supply and device variation robustness evaluation]
 ## Static behavior evaluation – CMOS inverter robustness – Power supply variation
 ## L1 Smart SPICE simulation for power supply variations
 As technology scales, the supply voltage is reduced to lower power consumption.
