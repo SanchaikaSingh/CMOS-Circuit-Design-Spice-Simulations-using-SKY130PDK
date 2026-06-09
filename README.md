@@ -288,7 +288,7 @@ Now we will calculate Threshold Voltage Vt for Id vs Vgs curve.
 
 <img width="1071" height="765" alt="Screenshot 2026-06-08 175013" src="https://github.com/user-attachments/assets/a0f1906c-4d60-4875-b95e-77b2d396c1c8" />
 
-<img width="1071" height="765" alt="Screenshot 2026-06-08 175013" src="https://github.com/user-attachments/assets/d3d220b9-86af-49dd-8f2e-8b96c1dcde42" />
+<img width="960" height="763" alt="Screenshot 2026-06-08 175101" src="https://github.com/user-attachments/assets/3f0abd42-66a0-44bf-845e-44b59fe2654c" />
 
 In the curve we can see that Vt is the value when current increases drastically for small change in Vgs. To calculate we will draw tangent on the curve and see where it touches.
 
