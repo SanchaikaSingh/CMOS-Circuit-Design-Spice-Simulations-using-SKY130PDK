@@ -1,29 +1,29 @@
 # CMOS-Circuit-Design-Spice-Simulations-using-SKY130PDK
 From transistors to simulations: learning CMOS design with Sky130 and ngspice.
-This repository contains the work completed during a 10-day CMOS circuit design workshop based on the SKY130 PDK. It includes transistor-level simulations, device characterization, timing analysis, and digital design flow integration using open-source EDA tools.
+This repository contains the work completed during CMOS circuit design workshop based on the SKY130 PDK. It includes transistor-level simulations, device characterization, timing analysis, and digital design flow integration using open-source EDA tools.
 ## Table of Contents
 
-### Day 1
+### WEEK 1
 - [Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)](#ngspicesky130---day-1---basics-of-nmos-drain-current-id-vs-drain-to-source-voltage-vds)
   - [NgspiceSky130_D1SK1 - Introduction to Circuit Design and SPICE simulations](#ngspicesky130_d1sk1---introduction-to-circuit-design-and-spice-simulations)
   - [NgspiceSky130_D1SK2 - NMOS resistive region and saturation region of operation](#ngspicesky130_d1sk2---nmos-resistive-region-and-saturation-region-of-operation)
   - [NgspiceSky130_D1SK3 - Introduction to SPICE](#ngspicesky130_d1sk3---introduction-to-spice)
 
-### Day 2
+### WEEK 2
 - [Velocity saturation and basics of CMOS inverter VTC](#ngspicesky130---day-2---velocity-saturation-and-basics-of-cmos-inverter-vtc)
   - [NgspiceSky130_D2SK1 - SPICE simulation for lower nodes and velocity saturation effect](#ngspicesky130_d2sk1---spice-simulation-for-lower-nodes-and-velocity-saturation-effect)
   - [NgspiceSky130_D2SK2 - CMOS voltage transfer characteristics (VTC)](#ngspicesky130_d2sk2---cmos-voltage-transfer-characteristics-vtc)
 
-### Day 3
+### WEEK 3
 - [CMOS Switching threshold and dynamic simulations](#ngspicesky130---day-3---cmos-switching-threshold-and-dynamic-simulations)
   - [NgspiceSky130_D3SK1 - Voltage transfer characteristics – SPICE simulations](#ngspicesky130_d3sk1---voltage-transfer-characteristics--spice-simulations)
   - [NgspiceSky130_D3SK2 - Static behavior evaluation – CMOS inverter robustness – Switching Threshold](#ngspicesky130_d3sk2---static-behavior-evaluation--cmos-inverter-robustness--switching-threshold)
 
-### Day 4
+### WEEK 4
 - [CMOS Noise Margin robustness evaluation](#ngspicesky130---day-4---cmos-noise-margin-robustness-evaluation)
   - [NgspiceSky130_D4SK1 - Static behavior evaluation – CMOS inverter robustness – Noise margin](#ngspicesky130_d4sk1---static-behavior-evaluation--cmos-inverter-robustness--noise-margin)
 
-### Day 5
+### WEEK 5
 - [CMOS power supply and device variation robustness evaluation](#ngspicesky130---day-5---cmos-power-supply-and-device-variation-robustness-evaluation)
   - [NgspiceSky130_D5SK1 - Static behavior evaluation – CMOS inverter robustness – Power supply variation](#ngspicesky130_d5sk1---static-behavior-evaluation--cmos-inverter-robustness--power-supply-variation)
   - [NgspiceSky130_D5SK2 - Static behavior evaluation – CMOS inverter robustness – Device variation](#ngspicesky130_d5sk2---static-behavior-evaluation--cmos-inverter-robustness--device-variation)
@@ -34,7 +34,7 @@ This repository contains the work completed during a 10-day CMOS circuit design 
 - ngspice (Circuit Simulation)  
 - GitHub (Documentation)
 
-# Day 1 [Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)]
+# WEEK 1 [Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)]
 ## Introduction to Circuit Design and SPICE simulations
 ## L1 Why do we need SPICE simulations?
 SPICE (Simulation Program with Integrated Circuit Emphasis) simulations are used to analyze and verify the behavior of electronic circuits before fabrication.
@@ -199,7 +199,7 @@ To check the value of Id for corresponding Vds and Vgs, just left click and see.
 
 <img width="263" height="26" alt="image" src="https://github.com/user-attachments/assets/3d63d8d9-cec3-4566-b6a4-d65205a6c457" />
 
-#  Day 2 [Velocity saturation and basics of CMOS inverter VTC]
+#  WEEK 2 [Velocity saturation and basics of CMOS inverter VTC]
 ## SPICE simulation for lower nodes and velocity saturation effect
 ## L1 SPICE simulation for lower nodes
 This curve is from previous SPICE simulation in which Id is at y-axis and Vds is at x-axis
@@ -387,7 +387,7 @@ When Vin = 2V, Vout = 0V; NMOS is in linear region and PMOS is Cut Off.
 
 <img width="1091" height="508" alt="image" src="https://github.com/user-attachments/assets/06cf38f2-b4bf-44c7-a1f8-c92c266eb17f" />
 
-# Day 3 [CMOS Switching threshold and dynamic simulations]
+# WEEK 3 [CMOS Switching threshold and dynamic simulations]
 ## Voltage transfer characteristics-SPICE simulations
 ## L1 SPICE deck creation for CMOS inverter
 SPICE Deck
@@ -556,7 +556,7 @@ Rise delay decreases with increase in PMOS width, this shows the time required t
 
 <img width="1244" height="667" alt="image" src="https://github.com/user-attachments/assets/c0d1d632-3ac9-45bd-9d65-8f6585d44f3d" />
 
-# Day 4 [CMOS Noise Margin robustness evaluation]
+# WEEK 4 [CMOS Noise Margin robustness evaluation]
 ## Static behaviour evaluation-CMOS inverter robustness-Noise Margin
 ## L1 Introduction to Noise Margin
 Now we will learn CMOS inverter's robustness towards the Noise Margin. Also we see the Noise margin evaluation for CMOS inverter. 
@@ -630,7 +630,7 @@ We will now plot Noise margins
 
 We will take the point where the slope is -1 ; x axis will give VIL and VIH, whereas y axis will give VOH and VOL. Noise margin NH = VOH - VIH = 1.70952-0.98778 = 0.72 Noise margin NL = VIL - VOL = 0.7733-0.09523 = 0.67807
 
-# DAY 5 [CMOS power supply and device variation robustness evaluation]
+# WEEK 5 [CMOS power supply and device variation robustness evaluation]
 ## Static behavior evaluation – CMOS inverter robustness – Power supply variation
 ## L1 Smart SPICE simulation for power supply variations
 As technology scales, the supply voltage is reduced to lower power consumption.
